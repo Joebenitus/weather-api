@@ -23,36 +23,36 @@ export default class User{
   mercuryYearsLeft(){
     let yearsLeft = ((this.lifeExpect - this.age) / 0.24).toFixed(2);
     if (yearsLeft >= 0){
-      return `On Mercury, you have ${yearsLeft} years to live.`
+      return `On Mercury, you have ${yearsLeft} years to live.`;
     } else {
-      return `On Mercury, you have lived ${yearsLeft * -1} years longer than average.`
+      return `On Mercury, you have lived ${yearsLeft * -1} years longer than expected.`;
     }
   }
 
   venusYearsLeft(){
     let yearsLeft = ((this.lifeExpect - this.age) / 0.62).toFixed(2);
     if (yearsLeft >= 0){
-      return `On Venus, you have ${yearsLeft} years to live.`
+      return `On Venus, you have ${yearsLeft} years to live.`;
     } else {
-      return `On Venus, you have lived ${yearsLeft * -1} years longer than average.`
+      return `On Venus, you have lived ${yearsLeft * -1} years longer than expected.`;
     }
   }
 
   marsYearsLeft(){
     let yearsLeft = ((this.lifeExpect - this.age) / 1.88).toFixed(2);
     if (yearsLeft >= 0){
-      return `On Mars, you have ${yearsLeft} years to live.`
+      return `On Mars, you have ${yearsLeft} years to live.`;
     } else {
-      return `On Mars, you have lived ${yearsLeft * -1} years longer than average.`
+      return `On Mars, you have lived ${yearsLeft * -1} years longer than expected.`;
     }
   }
 
   jupiterYearsLeft(){
     let yearsLeft = ((this.lifeExpect - this.age) / 11.86).toFixed(2);
     if (yearsLeft >= 0){
-      return `On Jupiter, you have ${yearsLeft} years to live.`
+      return `On Jupiter, you have ${yearsLeft} years to live.`;
     } else {
-      return `On Jupiter, you have lived ${yearsLeft * -1} years longer than average.`
+      return `On Jupiter, you have lived ${yearsLeft * -1} years longer than expected.`;
     }
   }
 }
