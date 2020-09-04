@@ -48,6 +48,11 @@ export default class User{
   }
 
   jupiterYearsLeft(){
-    return ((this.lifeExpect - this.age) / 11.86).toFixed(2);
+    let yearsLeft = ((this.lifeExpect - this.age) / 11.86).toFixed(2);
+    if (yearsLeft >= 0){
+      return `On Jupiter, you have ${yearsLeft} years to live.`
+    } else {
+      return `On Jupiter, you have lived ${yearsLeft * -1} years longer than average.`
+    }
   }
 }

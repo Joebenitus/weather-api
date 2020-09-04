@@ -48,6 +48,6 @@ describe('User', () => {
 
   test('should calculate the years the user has left to live on Jupiter', () => {
     let user = new User(40, 50);
-    expect(user.jupiterYearsLeft()).toEqual("0.84");
+    expect(user.jupiterYearsLeft()).toEqual("On Jupiter, you have 0.84 years to live.");
   });
 });
