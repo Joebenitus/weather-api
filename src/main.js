@@ -33,5 +33,7 @@ $(document).ready(function(){
     $("#age-on-neptune").text(`Age on Neptune: ${user.neptuneAge()} years.`);
     $("#years-left-neptune").text(user.neptuneYearsLeft());
 
+    $("#age-on-pluto").text(`Age on Pluto: ${user.plutoAge()} years.`);
+    $("#years-left-pluto").text(user.plutoYearsLeft());
   });
 });
