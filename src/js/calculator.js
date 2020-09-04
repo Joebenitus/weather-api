@@ -29,6 +29,6 @@ export default class User{
   }
 
   marsYearsLeft(){
-    
+    return ((this.lifeExpect - this.age) / 1.88).toFixed(2);
   }
 }
