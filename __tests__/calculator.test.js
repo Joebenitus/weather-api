@@ -7,7 +7,7 @@ describe('User', () => {
   });
 
   test('should output the user\'s age on Mercury', () => {
-    let user = new User();
-    expect(user.mercuryAge()).toEqual(40);
+    let user = new User(40);
+    expect(user.mercuryAge()).toEqual("166.67");
   });
 });

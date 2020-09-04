@@ -4,6 +4,6 @@ export default class User{
   }
 
   mercuryAge(){
-    
+    return (this.age / 0.24).toFixed(2);
   }
 }
