@@ -18,6 +18,6 @@ describe('User', () => {
 
   test('should output the user\'s age on Mars', () => {
     let user = new User(40);
-    expect(user.marsAge()).toEqual(100);
+    expect(user.marsAge()).toEqual("21.28");
   });
 });
