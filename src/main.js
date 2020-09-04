@@ -26,5 +26,8 @@ $(document).ready(function(){
 
     $("#age-on-saturn").text(`Age on Saturn: ${user.saturnAge()} years.`);
     $("#years-left-saturn").text(user.saturnYearsLeft());
+    
+    $("#age-on-uranus").text(`Age on Uranus: ${user.uranusAge()} years.`);
+    $("#years-left-uranus").text(user.uranusYearsLeft());
   });
 });
