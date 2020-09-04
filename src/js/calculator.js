@@ -39,7 +39,12 @@ export default class User{
   }
 
   marsYearsLeft(){
-    return ((this.lifeExpect - this.age) / 1.88).toFixed(2);
+    let yearsLeft = ((this.lifeExpect - this.age) / 1.88).toFixed(2);
+    if (yearsLeft >= 0){
+      return `On Mars, you have ${yearsLeft} years to live.`
+    } else {
+      return `On Mars, you have lived ${yearsLeft * -1} years longer than average.`
+    }
   }
 
   jupiterYearsLeft(){
