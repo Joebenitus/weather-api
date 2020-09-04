@@ -59,4 +59,8 @@ export default class User{
       return `On Jupiter, you have lived ${yearsLeft * -1} years longer than expected.`;
     }
   }
+
+  uranusYearsLeft(){
+    
+  }
 }
