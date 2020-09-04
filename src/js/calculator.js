@@ -20,7 +20,7 @@ export default class User{
     return (age / 11.86).toFixed(2);
   }
 
-  mercuryLifeExpect(){
-
+  mercuryYearsLeft(){
+    return ((this.lifeExpect - this.age) / 0.24).toFixed(2);
   }
 }
