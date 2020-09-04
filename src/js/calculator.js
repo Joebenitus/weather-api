@@ -25,6 +25,6 @@ export default class User{
   }
 
   venusYearsLeft(){
-
+    return ((this.lifeExpect - this.age) / 0.62).toFixed(2);
   }
 }
