@@ -21,7 +21,12 @@ export default class User{
   }
 
   mercuryYearsLeft(){
-    return ((this.lifeExpect - this.age) / 0.24).toFixed(2);
+    let yearsLeft = ((this.lifeExpect - this.age) / 0.24).toFixed(2);
+    if (yearsLeft >= 0){
+      return `On Mercury, you have ${yearsLeft} years to live.`
+    } else {
+      return `On Mercury, you have lived ${yearsLeft * -1} years longer than average.`
+    }
   }
 
   venusYearsLeft(){
