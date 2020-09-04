@@ -20,4 +20,9 @@ describe('User', () => {
     let user = new User(40);
     expect(user.marsAge()).toEqual("21.28");
   });
+
+  test('should output the user\'s age on Jupiter', () => {
+    let user = new User(40);
+    expect(user.jupiterAge()).toEqual(100);
+  });
 });

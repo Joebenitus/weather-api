@@ -14,4 +14,8 @@ export default class User{
   marsAge(){
     return (this.age / 1.88).toFixed(2);
   }
+
+  jupiterAge(){
+    
+  }
 }
