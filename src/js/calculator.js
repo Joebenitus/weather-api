@@ -21,7 +21,7 @@ export default class User{
   }
 
   uranusAge(){
-    
+    return (this.age / 84.02).toFixed(2);
   }
 
   mercuryYearsLeft(){
