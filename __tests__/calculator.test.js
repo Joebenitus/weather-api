@@ -80,4 +80,10 @@ describe('User', () => {
     let user = new User(40, 50);
     expect(user.neptuneYearsLeft()).toEqual("On Neptune, you have 0.06 years to live.");
   });
+
+  test('should output the user\'s age on Pluto', () => {
+    let user = new User(40, 50);
+    expect(user.plutoAge()).toEqual("0.24");
+  });
+
 });

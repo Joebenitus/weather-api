@@ -32,6 +32,10 @@ export default class User{
     return (this.age / 164.80).toFixed(2);
   }
 
+  plutoAge(){
+    
+  }
+
   mercuryYearsLeft(){
     let yearsLeft = ((this.lifeExpect - this.age) / 0.24).toFixed(2);
     if (yearsLeft >= 0){
