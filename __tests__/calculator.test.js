@@ -13,6 +13,6 @@ describe('User', () => {
 
   test('should output the user\'s age on Venus', () => {
     let user = new User(40);
-    expect(user.venusAge()).toEqual(100);
+    expect(user.venusAge()).toEqual("64.52");
   });
 });

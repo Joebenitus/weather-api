@@ -8,6 +8,6 @@ export default class User{
   }
 
   venusAge(){
-    
+    return (this.age / 0.62).toFixed(2);
   }
 }
