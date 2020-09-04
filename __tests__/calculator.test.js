@@ -73,6 +73,6 @@ describe('User', () => {
 
   test('should output the user\'s age on Neptune', () => {
     let user = new User(40, 50);
-    expect(user.neptuneAge()).toEqual("1.36");
+    expect(user.neptuneAge()).toEqual("0.24");
   });
 });

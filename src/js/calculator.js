@@ -29,7 +29,7 @@ export default class User{
   }
 
   neptuneAge(){
-    
+    return (this.age / 164.80).toFixed(2);
   }
 
   mercuryYearsLeft(){
