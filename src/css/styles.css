@@ -10,3 +10,8 @@ body {
 .info-screen {
   display: none;
 }
+
+.info-screen, form#input, .jumbotron {
+  text-align: center;
+  margin-top: 20px;
+}
