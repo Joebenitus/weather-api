@@ -17,13 +17,29 @@ This project was made to practice test driven development (TDD) with Jest and re
 
 [4] Determines the user's age on Jupiter
 
-[5] Determines how many years the user has left to live on Mercury
+[5] Determines the user's age on Saturn
 
-[6] Determines how many years the user has left to live on Venus
+[6] Determines the user's age on Uranus
 
-[7] Determines how many years the user has left to live on Mars
+[7] Determines the user's age on Neptune
 
-[8] Determines how many years the user has left to live on Jupiter
+[8] Determines the user's age on Pluto
+
+[9] Determines how many years the user has left to live on Mercury
+
+[10] Determines how many years the user has left to live on Venus
+
+[11] Determines how many years the user has left to live on Mars
+
+[12] Determines how many years the user has left to live on Jupiter
+
+[13] Determines how many years the user has left to live on Saturn
+
+[14] Determines how many years the user has left to live on Uranus
+
+[15] Determines how many years the user has left to live on Neptune
+
+[16] Determines how many years the user has left to live on Pluto
 
 
 ## Setup/Installation Requirements
