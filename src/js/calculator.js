@@ -85,4 +85,8 @@ export default class User{
       return `On Uranus, you have lived ${yearsLeft * -1} years longer than expected.`;
     }
   }
+
+  neptuneYearsLeft(){
+    
+  }
 }
