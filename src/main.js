@@ -11,7 +11,14 @@ $(document).ready(function(){
     let inputtedExpectancy = $("#input-expectancy").val();
     let user = new User(inputtedAge, inputtedExpectancy);
     $(".info-screen").show();
+
     $("#age-on-mercury").text(`Age on Mercury: ${user.mercuryAge()} years.`);
-    $("#time-left-mercury").text(user.mercuryYearsLeft());
+    $("#years-left-mercury").text(user.mercuryYearsLeft());
+
+    $("#age-on-venus").text(`Age on Venus: ${user.venusAge()} years.`);
+    $("#years-left-venus").text(user.venusYearsLeft());
+
+    $("#age-on-mars").text(`Age on Mars: ${user.marsAge()} years.`);
+    $("#years-left-mars").text(user.marsYearsLeft());
   });
 });
