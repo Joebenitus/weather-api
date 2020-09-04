@@ -1,3 +1,8 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(0, 0, 80);
+  color: white;
+}
+
+.jumbotron {
+  background-color: rgb(0, 0, 155);
 }
