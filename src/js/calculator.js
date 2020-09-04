@@ -20,6 +20,10 @@ export default class User{
     return (this.age / 11.86).toFixed(2);
   }
 
+  uranusAge(){
+    
+  }
+
   mercuryYearsLeft(){
     let yearsLeft = ((this.lifeExpect - this.age) / 0.24).toFixed(2);
     if (yearsLeft >= 0){

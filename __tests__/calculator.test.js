@@ -50,4 +50,9 @@ describe('User', () => {
     let user = new User(40, 50);
     expect(user.jupiterYearsLeft()).toEqual("On Jupiter, you have 0.84 years to live.");
   });
+
+  test('should output the user\'s age on Uranus', () => {
+    let user = new User(40, 50);
+    expect(user.uranusAge()).toEqual("On Uranus, you have 0.84 years to live.");
+  });
 });
