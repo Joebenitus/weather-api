@@ -10,9 +10,21 @@ This project was made to practice test driven development (TDD) with Jest and re
 
 #### Specs
 [1] Determines the user's age on Mercury
+
 [2] Determines the user's age on Venus
+
 [3] Determines the user's age on Mars
+
 [4] Determines the user's age on Jupiter
+
+[5] Determines how many years the user has left to live on Mercury
+
+[6] Determines how many years the user has left to live on Venus
+
+[7] Determines how many years the user has left to live on Mars
+
+[8] Determines how many years the user has left to live on Jupiter
+
 
 ## Setup/Installation Requirements
 
