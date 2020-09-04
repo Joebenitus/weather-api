@@ -15,4 +15,9 @@ describe('User', () => {
     let user = new User(40);
     expect(user.venusAge()).toEqual("64.52");
   });
+
+  test('should output the user\'s age on Mars', () => {
+    let user = new User(40);
+    expect(user.marsAge()).toEqual(100);
+  });
 });
