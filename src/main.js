@@ -20,5 +20,8 @@ $(document).ready(function(){
 
     $("#age-on-mars").text(`Age on Mars: ${user.marsAge()} years.`);
     $("#years-left-mars").text(user.marsYearsLeft());
+
+    $("#age-on-jupiter").text(`Age on Jupiter: ${user.jupiterAge()} years.`);
+    $("#years-left-jupiter").text(user.jupiterYearsLeft());
   });
 });
