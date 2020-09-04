@@ -8,22 +8,22 @@ describe('User', () => {
 
   test('should output the user\'s age on Mercury', () => {
     let user = new User(40);
-    expect(user.mercuryAge()).toEqual("166.67");
+    expect(user.mercuryAge(user.age)).toEqual("166.67");
   });
 
   test('should output the user\'s age on Venus', () => {
     let user = new User(40);
-    expect(user.venusAge()).toEqual("64.52");
+    expect(user.venusAge(user.age)).toEqual("64.52");
   });
 
   test('should output the user\'s age on Mars', () => {
     let user = new User(40);
-    expect(user.marsAge()).toEqual("21.28");
+    expect(user.marsAge(user.age)).toEqual("21.28");
   });
 
   test('should output the user\'s age on Jupiter', () => {
     let user = new User(40);
-    expect(user.jupiterAge()).toEqual("3.37");
+    expect(user.jupiterAge(user.age)).toEqual("3.37");
   });
 
   test('should take the user\'s life expectancy as parameter of user object', () => {
