@@ -28,6 +28,10 @@ export default class User{
     return (this.age / 84.02).toFixed(2);
   }
 
+  neptuneAge(){
+    
+  }
+
   mercuryYearsLeft(){
     let yearsLeft = ((this.lifeExpect - this.age) / 0.24).toFixed(2);
     if (yearsLeft >= 0){
