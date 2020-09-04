@@ -21,7 +21,7 @@ export default class User{
   }
 
   saturnAge(){
-    
+    return (this.age / 29.40).toFixed(2);
   }
 
   uranusAge(){
