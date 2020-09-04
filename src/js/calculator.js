@@ -19,4 +19,8 @@ export default class User{
   jupiterAge(){
     return (this.age / 11.86).toFixed(2);
   }
+
+  mercuryLifeExpect(){
+    
+  }
 }
