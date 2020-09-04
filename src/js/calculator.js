@@ -87,6 +87,11 @@ export default class User{
   }
 
   neptuneYearsLeft(){
-    
+    let yearsLeft = ((this.lifeExpect - this.age) / 164.80).toFixed(2);
+    if (yearsLeft >= 0){
+      return `On Neptune, you have ${yearsLeft} years to live.`;
+    } else {
+      return `On Neptune, you have lived ${yearsLeft * -1} years longer than expected.`;
+    }
   }
 }
