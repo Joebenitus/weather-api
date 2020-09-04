@@ -21,7 +21,7 @@ export default class User{
   }
 
   saturnAge(){
-    return (this.age / 29.40).toFixed(3);
+    return (this.age / 29.4).toFixed(3);
   }
 
   uranusAge(){
@@ -29,7 +29,7 @@ export default class User{
   }
 
   neptuneAge(){
-    return (this.age / 164.80).toFixed(3);
+    return (this.age / 164.8).toFixed(3);
   }
 
   plutoAge(){
@@ -73,7 +73,7 @@ export default class User{
   }
 
   saturnYearsLeft(){
-    let yearsLeft = ((this.lifeExpect - this.age) / 29.40).toFixed(2);
+    let yearsLeft = ((this.lifeExpect - this.age) / 29.4).toFixed(3);
     if (yearsLeft >= 0){
       return `On Saturn, you have ${yearsLeft} years to live.`;
     } else {
@@ -82,7 +82,7 @@ export default class User{
   }
 
   uranusYearsLeft(){
-    let yearsLeft = ((this.lifeExpect - this.age) / 84.02).toFixed(2);
+    let yearsLeft = ((this.lifeExpect - this.age) / 84.02).toFixed(3);
     if (yearsLeft >= 0){
       return `On Uranus, you have ${yearsLeft} years to live.`;
     } else {
@@ -91,7 +91,7 @@ export default class User{
   }
 
   neptuneYearsLeft(){
-    let yearsLeft = ((this.lifeExpect - this.age) / 164.80).toFixed(2);
+    let yearsLeft = ((this.lifeExpect - this.age) / 164.8).toFixed(3);
     if (yearsLeft >= 0){
       return `On Neptune, you have ${yearsLeft} years to live.`;
     } else {
@@ -100,6 +100,11 @@ export default class User{
   }
 
   plutoYearsLeft(){
-    
+    let yearsLeft = ((this.lifeExpect - this.age) / 247.94).toFixed(3);
+    if (yearsLeft >= 0){
+      return `On Pluto, you have ${yearsLeft} years to live.`;
+    } else {
+      return `On Pluto, you have lived ${yearsLeft * -1} years longer than expected.`;
+    }
   }
 }

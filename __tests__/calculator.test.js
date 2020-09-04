@@ -58,7 +58,7 @@ describe('User', () => {
 
   test('should calculate the years the user has left to live on Uranus', () => {
     let user = new User(40, 50);
-    expect(user.uranusYearsLeft()).toEqual("On Uranus, you have 0.12 years to live.");
+    expect(user.uranusYearsLeft()).toEqual("On Uranus, you have 0.119 years to live.");
   });
 
   test('should output the user\'s age on Saturn', () => {
@@ -68,7 +68,7 @@ describe('User', () => {
 
   test('should calculate the years the user has left to live on Saturn', () => {
     let user = new User(40, 50);
-    expect(user.saturnYearsLeft()).toEqual("On Saturn, you have 0.34 years to live.");
+    expect(user.saturnYearsLeft()).toEqual("On Saturn, you have 0.340 years to live.");
   });
 
   test('should output the user\'s age on Neptune', () => {
@@ -78,7 +78,7 @@ describe('User', () => {
 
   test('should calculate the years the user has left to live on Neptune', () => {
     let user = new User(40, 50);
-    expect(user.neptuneYearsLeft()).toEqual("On Neptune, you have 0.06 years to live.");
+    expect(user.neptuneYearsLeft()).toEqual("On Neptune, you have 0.061 years to live.");
   });
 
   test('should output the user\'s age on Pluto', () => {
@@ -88,6 +88,6 @@ describe('User', () => {
 
   test('should calculate the years the user has left to live on Pluto', () => {
     let user = new User(40, 50);
-    expect(user.plutoYearsLeft()).toEqual("On Pluto, you have 0.06 years to live.");
+    expect(user.plutoYearsLeft()).toEqual("On Pluto, you have 0.040 years to live.");
   });
 });
