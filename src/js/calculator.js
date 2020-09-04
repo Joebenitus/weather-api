@@ -33,6 +33,6 @@ export default class User{
   }
 
   jupiterYearsLeft(){
-    
+    return ((this.lifeExpect - this.age) / 11.86).toFixed(2);
   }
 }
