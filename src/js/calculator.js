@@ -65,7 +65,12 @@ export default class User{
   }
 
   saturnYearsLeft(){
-    
+    let yearsLeft = ((this.lifeExpect - this.age) / 29.40).toFixed(2);
+    if (yearsLeft >= 0){
+      return `On Saturn, you have ${yearsLeft} years to live.`;
+    } else {
+      return `On Saturn, you have lived ${yearsLeft * -1} years longer than expected.`;
+    }
   }
 
   uranusYearsLeft(){
