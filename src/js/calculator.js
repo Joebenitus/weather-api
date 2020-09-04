@@ -1,6 +1,7 @@
 export default class User{
-  constructor(age){
+  constructor(age, lifeExpect){
     this.age = age;
+    this.lifeExpect = lifeExpect;
   }
 
   mercuryAge(){

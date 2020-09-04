@@ -25,4 +25,9 @@ describe('User', () => {
     let user = new User(40);
     expect(user.jupiterAge()).toEqual("3.37");
   });
+
+  test('should take the user\'s life expectancy as parameter of user object', () => {
+    let user = new User(40, 80);
+    expect(user.lifeExpect).toEqual(80);
+  });
 });
