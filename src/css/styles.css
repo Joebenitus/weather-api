@@ -6,3 +6,7 @@ body {
 .jumbotron {
   background-color: rgb(0, 0, 155);
 }
+
+.info-screen {
+  display: none;
+}

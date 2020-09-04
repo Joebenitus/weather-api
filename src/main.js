@@ -10,6 +10,8 @@ $(document).ready(function(){
     let inputtedAge = $("#input-age").val();
     let inputtedExpectancy = $("#input-expectancy").val();
     let user = new User(inputtedAge, inputtedExpectancy);
-    console.log(user);
+    $(".info-screen").show();
+    $("#age-on-mercury").text(`Age on Mercury: ${user.mercuryAge()} years.`);
+    $("#time-left-mercury").text(user.mercuryYearsLeft());
   });
 });
