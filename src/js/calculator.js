@@ -21,19 +21,19 @@ export default class User{
   }
 
   saturnAge(){
-    return (this.age / 29.40).toFixed(2);
+    return (this.age / 29.40).toFixed(3);
   }
 
   uranusAge(){
-    return (this.age / 84.02).toFixed(2);
+    return (this.age / 84.02).toFixed(3);
   }
 
   neptuneAge(){
-    return (this.age / 164.80).toFixed(2);
+    return (this.age / 164.80).toFixed(3);
   }
 
   plutoAge(){
-    
+    return (this.age / 247.94).toFixed(3);
   }
 
   mercuryYearsLeft(){
