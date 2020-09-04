@@ -98,4 +98,8 @@ export default class User{
       return `On Neptune, you have lived ${yearsLeft * -1} years longer than expected.`;
     }
   }
+
+  plutoYearsLeft(){
+    
+  }
 }
