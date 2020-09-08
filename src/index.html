@@ -1,66 +1,23 @@
-<!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-  <title>Galactic Age Calculator</title>
+  <title>Weather</title>
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Galactic Age Calculator</h1>
-    </div>
-    <h5 class="info">On Earth, one year is the time it takes for our planet to make one full revolution around the Sun. In Earth's case, this takes 365 days. But there are seven other planets in our solar system and they each take different lengths of time to make a full revolution around the Sun. The time it takes for a planet to make one revolution around the Sun is called a Solar Year. Mercury, for example, has a Solar Year of only 88 earth days. On the opposide end of the spectrum, Neptune has a Solar Year equivalent to about 165 Earth years! That's crazy. If you are curious, you can enter your age and life expectancy down below. Don't worry, you can just guess your life expectancy. Upon pressing the 'Submit' button, you will see how old you are and your life expectancy for every planet in our solar system (and pluto just for fun).</h5>
-    <form id="input">
-      <label for="input-age">Enter your age:</label>
-      <input id="input-age" type="number">
-      <label for="input-expectancy">Enter your life expectancy:</label>
-      <input id="input-expectancy" type="number">
-      <button class="btn btn-dark" id="button-submit" type="submit">Submit</button>
-    </form>
-    <div class="info-screen">
-      <div class="row">
-        <div class="col-md-6">
-          <h3 class="mercury">Mercury:</h3>
-          <p class="mercury" id="age-on-mercury"></p>
-          <p class="mercury" id="years-left-mercury"></p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="venus">Venus:</h3>
-          <p class="venus" id="age-on-venus"></p>
-          <p class="venus" id="years-left-venus"></p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="mars">Mars:</h3>
-          <p class="mars" id="age-on-mars"></p>
-          <p class="mars" id="years-left-mars"></p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="jupiter">Jupiter:</h3>
-          <p class="jupiter" id="age-on-jupiter"></p>
-          <p class="jupiter" id="years-left-jupiter"></p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="saturn">Saturn:</h3>
-          <p class="saturn" id="age-on-saturn"></p>
-          <p class="saturn" id="years-left-saturn"></p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="uranus">Uranus:</h3>
-          <p class="uranus" id="age-on-uranus"></p>
-          <p class="uranus" id="years-left-uranus"></p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="neptune">Neptune:</h3>
-          <p class="neptune" id="age-on-neptune"></p>
-          <p class="neptune" id="years-left-neptune"></p>
-        </div>
-        <div class="col-md-6">
-          <h3 class="pluto">Pluto:</h3>
-          <p class="pluto" id="age-on-pluto"></p>
-          <p class="pluto" id="years-left-pluto"></p>
-        </div>
-      </div>
-    </div>
+    <h1>Get Weather Conditions From Anywhere In The US!</h1>
+    <!-- <label for="city">City:</label>
+    <input id="city" type="text">
+    <label for="state">State:</label>
+    <input id="state" type="text"> -->
+    <label for="zipcode">Zipcode:</label>
+    <input id="zipcode" type="number">
+    <button class="btn-success" id="weatherLocation">Search</button>
+    <div class="showErrors"></div>
+    <div class="showHumidity"></div>
+    <div class="showTemp"></div>
+    <div class="showWindSpeed"></div>
+    <div class="showSunrise"></div>
+    <div class="showSunset"></div>
   </div>
-  
 </body>
 </html>

@@ -2,38 +2,49 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import User from './js/calculator.js';
 
-$(document).ready(function(){
-  $("form#input").submit(function(event){
-    event.preventDefault();
-    let inputtedAge = $("#input-age").val();
-    let inputtedExpectancy = $("#input-expectancy").val();
-    let user = new User(inputtedAge, inputtedExpectancy);
-    $(".info-screen").show();
+$(document).ready(function() {
+  $('#weatherLocation').click(function() {
+    const zipcode = $('#zipcode').val();
 
-    $("#age-on-mercury").text(`Age on Mercury: ${user.mercuryAge()} Mercurian years.`);
-    $("#years-left-mercury").text(user.mercuryYearsLeft());
+    $('#city').val("");
+    $('#state').val("");
+    $('#zipcode').val("");
+    //$('#countryCode').val("")
 
-    $("#age-on-venus").text(`Age on Venus: ${user.venusAge()} Venusian years.`);
-    $("#years-left-venus").text(user.venusYearsLeft());
+    let request = new XMLHttpRequest();
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${zipcode},US&appid=${process.env.API_KEY}`;
 
-    $("#age-on-mars").text(`Age on Mars: ${user.marsAge()} Martian years.`);
-    $("#years-left-mars").text(user.marsYearsLeft());
+    request.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        const response = JSON.parse(this.responseText);
+        getElements(response);
+      }
+    };
 
-    $("#age-on-jupiter").text(`Age on Jupiter: ${user.jupiterAge()} Jovian years.`);
-    $("#years-left-jupiter").text(user.jupiterYearsLeft());
+    request.open("GET", url, true);
+    request.send();
 
-    $("#age-on-saturn").text(`Age on Saturn: ${user.saturnAge()} Saturnian years.`);
-    $("#years-left-saturn").text(user.saturnYearsLeft());
+    function getElements(response) {
+      $('.showHumidity').text(`The humidity in ${response.name} is ${response.main.humidity}%`);
+      $('.showTemp').text(`The temperature in Fahrenheit is ${toFahrenheit(response.main.temp)} degrees.`);
+      $(".showWindSpeed").text(`The Wind Speed is ${response.wind.speed} MPH.`);
+      $(".showSunrise").text(`The Sunrise is ${toPST(response.sys.sunrise)}`);
+      $(".showSunset").text(`The Sunset is ${toPST(response.sys.sunset)}`);
+      
+    }
+
+    function toFahrenheit(temp){
+      return parseInt((temp - 273.15) * (9/5) + 32);
+    }
+
+    function toPST(time){
+      let date = new Date(time * 1000);
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      return hours + ":" + minutes
+    }
+
     
-    $("#age-on-uranus").text(`Age on Uranus: ${user.uranusAge()} Uranian years.`);
-    $("#years-left-uranus").text(user.uranusYearsLeft());
-
-    $("#age-on-neptune").text(`Age on Neptune: ${user.neptuneAge()} Neptunian years.`);
-    $("#years-left-neptune").text(user.neptuneYearsLeft());
-
-    $("#age-on-pluto").text(`Age on Pluto: ${user.plutoAge()} Plutonian years.`);
-    $("#years-left-pluto").text(user.plutoYearsLeft());
   });
 });
